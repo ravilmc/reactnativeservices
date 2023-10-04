@@ -6,13 +6,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "web:dev": "cd apps/web && pnpm dev",
-    "server:dev": "cd apps/server && pnpm start:dev",
-    "dev": "concurrently \"pnpm web:dev\" \"pnpm server:dev\""
+    "server:dev": "cd apps/server && pnpm dev",
+    "dev": "pnpm run --parallel dev"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "concurrently": "^8.2.1"
-  }
+  "license": "ISC"
 }
